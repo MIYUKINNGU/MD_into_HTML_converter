@@ -1,7 +1,3 @@
-# Markdownからhtmlにするコードを作るよ
-# 私のブログを楽に書けるようにするために作るよ
-# ブログが雑い作りすぎるというか技術力なさ過ぎってのは言っちゃだめよ
-# 構文解析が必須だよ(泣)
 from collections import deque
 
 class Automaton:
@@ -402,4 +398,5 @@ if __name__ == "__main__":
     with open(sys.argv[3], "w", encoding="utf-8") as f:
         f.write((head+conv.parse()+footer).replace("{\\}", "{}"))
     
+
     
